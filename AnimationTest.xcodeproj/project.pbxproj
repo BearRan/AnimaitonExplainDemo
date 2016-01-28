@@ -15,6 +15,12 @@
 		1880FE281C33B80B00B203F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1880FE261C33B80B00B203F7 /* LaunchScreen.storyboard */; };
 		1880FE331C33B80B00B203F7 /* AnimationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FE321C33B80B00B203F7 /* AnimationTestTests.m */; };
 		1880FE3E1C33B80B00B203F7 /* AnimationTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FE3D1C33B80B00B203F7 /* AnimationTestUITests.m */; };
+		1880FECA1C33C86F00B203F7 /* BearConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FEC01C33C86F00B203F7 /* BearConstants.m */; };
+		1880FECB1C33C86F00B203F7 /* BearTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FEC21C33C86F00B203F7 /* BearTextField.m */; };
+		1880FECC1C33C86F00B203F7 /* UILabel+BearSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FEC51C33C86F00B203F7 /* UILabel+BearSet.m */; };
+		1880FECD1C33C86F00B203F7 /* UITextField+BearSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FEC71C33C86F00B203F7 /* UITextField+BearSet.m */; };
+		1880FECE1C33C86F00B203F7 /* UIView+BearSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FEC91C33C86F00B203F7 /* UIView+BearSet.m */; };
+		1880FED11C33E05000B203F7 /* CALayer+MyCALayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FED01C33E05000B203F7 /* CALayer+MyCALayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,19 @@
 		1880FE391C33B80B00B203F7 /* AnimationTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1880FE3D1C33B80B00B203F7 /* AnimationTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationTestUITests.m; sourceTree = "<group>"; };
 		1880FE3F1C33B80B00B203F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1880FEBF1C33C86F00B203F7 /* BearConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BearConstants.h; sourceTree = "<group>"; };
+		1880FEC01C33C86F00B203F7 /* BearConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BearConstants.m; sourceTree = "<group>"; };
+		1880FEC11C33C86F00B203F7 /* BearTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BearTextField.h; sourceTree = "<group>"; };
+		1880FEC21C33C86F00B203F7 /* BearTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BearTextField.m; sourceTree = "<group>"; };
+		1880FEC31C33C86F00B203F7 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1880FEC41C33C86F00B203F7 /* UILabel+BearSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+BearSet.h"; sourceTree = "<group>"; };
+		1880FEC51C33C86F00B203F7 /* UILabel+BearSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+BearSet.m"; sourceTree = "<group>"; };
+		1880FEC61C33C86F00B203F7 /* UITextField+BearSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+BearSet.h"; sourceTree = "<group>"; };
+		1880FEC71C33C86F00B203F7 /* UITextField+BearSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+BearSet.m"; sourceTree = "<group>"; };
+		1880FEC81C33C86F00B203F7 /* UIView+BearSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BearSet.h"; sourceTree = "<group>"; };
+		1880FEC91C33C86F00B203F7 /* UIView+BearSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BearSet.m"; sourceTree = "<group>"; };
+		1880FECF1C33E04F00B203F7 /* CALayer+MyCALayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+MyCALayer.h"; sourceTree = "<group>"; };
+		1880FED01C33E05000B203F7 /* CALayer+MyCALayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+MyCALayer.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +124,10 @@
 				1880FE1C1C33B80B00B203F7 /* AppDelegate.m */,
 				1880FE1E1C33B80B00B203F7 /* ViewController.h */,
 				1880FE1F1C33B80B00B203F7 /* ViewController.m */,
+				1880FECF1C33E04F00B203F7 /* CALayer+MyCALayer.h */,
+				1880FED01C33E05000B203F7 /* CALayer+MyCALayer.m */,
 				1880FE211C33B80B00B203F7 /* Main.storyboard */,
+				1880FEBE1C33C86F00B203F7 /* BearMethod */,
 				1880FE241C33B80B00B203F7 /* Assets.xcassets */,
 				1880FE261C33B80B00B203F7 /* LaunchScreen.storyboard */,
 				1880FE291C33B80B00B203F7 /* Info.plist */,
@@ -138,6 +160,24 @@
 				1880FE3F1C33B80B00B203F7 /* Info.plist */,
 			);
 			path = AnimationTestUITests;
+			sourceTree = "<group>";
+		};
+		1880FEBE1C33C86F00B203F7 /* BearMethod */ = {
+			isa = PBXGroup;
+			children = (
+				1880FEC31C33C86F00B203F7 /* PrefixHeader.pch */,
+				1880FEBF1C33C86F00B203F7 /* BearConstants.h */,
+				1880FEC01C33C86F00B203F7 /* BearConstants.m */,
+				1880FEC11C33C86F00B203F7 /* BearTextField.h */,
+				1880FEC21C33C86F00B203F7 /* BearTextField.m */,
+				1880FEC41C33C86F00B203F7 /* UILabel+BearSet.h */,
+				1880FEC51C33C86F00B203F7 /* UILabel+BearSet.m */,
+				1880FEC61C33C86F00B203F7 /* UITextField+BearSet.h */,
+				1880FEC71C33C86F00B203F7 /* UITextField+BearSet.m */,
+				1880FEC81C33C86F00B203F7 /* UIView+BearSet.h */,
+				1880FEC91C33C86F00B203F7 /* UIView+BearSet.m */,
+			);
+			path = BearMethod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +247,7 @@
 				TargetAttributes = {
 					1880FE141C33B80B00B203F7 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = VT6HKJNGDV;
 					};
 					1880FE2D1C33B80B00B203F7 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -271,8 +312,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1880FE201C33B80B00B203F7 /* ViewController.m in Sources */,
+				1880FECA1C33C86F00B203F7 /* BearConstants.m in Sources */,
+				1880FECD1C33C86F00B203F7 /* UITextField+BearSet.m in Sources */,
 				1880FE1D1C33B80B00B203F7 /* AppDelegate.m in Sources */,
 				1880FE1A1C33B80B00B203F7 /* main.m in Sources */,
+				1880FED11C33E05000B203F7 /* CALayer+MyCALayer.m in Sources */,
+				1880FECE1C33C86F00B203F7 /* UIView+BearSet.m in Sources */,
+				1880FECB1C33C86F00B203F7 /* BearTextField.m in Sources */,
+				1880FECC1C33C86F00B203F7 /* UILabel+BearSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,10 +460,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AnimationTest/BearMethod/PrefixHeader.pch";
 				INFOPLIST_FILE = AnimationTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuntu.text.AnimationTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +475,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AnimationTest/BearMethod/PrefixHeader.pch";
 				INFOPLIST_FILE = AnimationTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuntu.text.AnimationTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +553,7 @@
 				1880FE441C33B80B00B203F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1880FE451C33B80B00B203F7 /* Build configuration list for PBXNativeTarget "AnimationTestTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +562,7 @@
 				1880FE471C33B80B00B203F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1880FE481C33B80B00B203F7 /* Build configuration list for PBXNativeTarget "AnimationTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +571,7 @@
 				1880FE4A1C33B80B00B203F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

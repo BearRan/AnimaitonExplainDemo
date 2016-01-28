@@ -2,7 +2,7 @@
 //  AnimationTestTests.m
 //  AnimationTestTests
 //
-//  Created by apple on 15/12/30.
+//  Created by Bear on 15/12/30.
 //  Copyright © 2015年 apple. All rights reserved.
 //
 
