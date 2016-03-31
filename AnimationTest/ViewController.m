@@ -7,10 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "CABasicAnimationViewController.h"
 
-@interface ViewController (){
-    UIView          *canvansView;
-    UIView          *rocketView;
+static NSString *titleStr_CABasic = @"CABasicAnimationDemo";
+
+@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
+{
+    UITableView *_tableView;
+    NSArray     *_dataArray;
 }
 
 
@@ -18,91 +22,61 @@
 
 @implementation ViewController
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden = YES;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    UIButton *startBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 40)];
-    [startBtn setTitle:@"开始" forState:UIControlStateNormal];
-    [startBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    [startBtn addTarget:self action:@selector(startBtnEvent) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:startBtn];
     
     [self createUI];
 }
 
 - (void)createUI
 {
-    canvansView = [[UIView alloc] initWithFrame:CGRectMake(20, 200, 200, 200)];
-    canvansView.backgroundColor = [UIColor orangeColor];
-    [self.view addSubview:canvansView];
+    _dataArray = @[titleStr_CABasic];
     
-    
-    rocketView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
-    rocketView.backgroundColor = [UIColor greenColor];
-    [canvansView addSubview:rocketView];
-    [rocketView BearSetCenterToParentViewWithAxis:kAXIS_X];
-}
-
-- (void)startBtnEvent
-{
-    int select = 2;
-    switch (select) {
-        case 1: [self animation1];  break;
-        case 2: [self animation2];  break;
-            
-        default:
-            break;
-    }
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    _tableView.tableFooterView = [UIView new];
+    [self.view addSubview:_tableView];
 }
 
 
-//  原始的动画
-- (void)animation1
+#pragma TableViewDelegate
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position.x"];
-    animation.toValue = [NSNumber numberWithInt:300];
-    animation.duration = 1.0f;
-    animation.removedOnCompletion = NO;
-    animation.fillMode = kCAFillModeForwards;
+    return [_dataArray count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *cellID = @"MyCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     
-    if (animation.fromValue == nil) {
-        animation.fromValue = [rocketView.layer.presentationLayer valueForKey:animation.keyPath];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
     
-    [rocketView.layer addAnimation:animation forKey:animation.keyPath];
+    NSString *titleStr = _dataArray[indexPath.row];
+    cell.textLabel.text = titleStr;
+    
+    return cell;
 }
 
-//  根据文章写的动画，其实都一样了
-- (void)animation2
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CABasicAnimation *animation = [CABasicAnimation animation];
-    animation.keyPath = @"position.x";
-    animation.fromValue = @0;
-    animation.toValue = @300;
-    animation.duration = 1.0f;
+    NSString *selectTitle = _dataArray[indexPath.row];
     
-    
-    int select = 1;
-    switch (select) {
-        case 1:
-            //  保持运动后的状态1
-            rocketView.layer.position = CGPointMake(300, rocketView.center.y);
-            break;
-            
-        case 2:
-            //  保持运动后的状态2
-            animation.removedOnCompletion = NO;
-            animation.fillMode = kCAFillModeForwards;
-            break;
-            
-        default:
-            break;
+    if ([selectTitle isEqualToString:titleStr_CABasic]) {
+        CABasicAnimationViewController *destinationVC = [[CABasicAnimationViewController alloc] init];
+        [self.navigationController pushViewController:destinationVC animated:YES];
     }
-    
-    [rocketView.layer addAnimation:animation forKey:@"basic"];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
