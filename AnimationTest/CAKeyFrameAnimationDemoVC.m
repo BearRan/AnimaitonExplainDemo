@@ -10,7 +10,7 @@
 
 @interface CAKeyFrameAnimationDemoVC ()
 {
-    UIView *_testView;
+    UIButton *_testBtn;
 }
 
 @end
@@ -28,27 +28,29 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    _testView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
-    _testView.backgroundColor = [[UIColor blueColor] colorWithAlphaComponent:0.5];
-    [self.view addSubview:_testView];
-    [_testView BearSetCenterToParentViewWithAxis:kAXIS_X_Y];
+    _testBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
+    _testBtn.backgroundColor = [[UIColor blueColor] colorWithAlphaComponent:0.5];
+    [_testBtn setTitle:@"Click" forState:UIControlStateNormal];
+    [_testBtn addTarget:self action:@selector(btnEvent) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_testBtn];
+    [_testBtn BearSetCenterToParentViewWithAxis:kAXIS_X_Y];
     
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)btnEvent
+{
+    CGFloat tempCenterX = _testBtn.centerX;
+    
+    CAKeyframeAnimation *keyFrameAnimation = [CAKeyframeAnimation animation];
+    keyFrameAnimation.values = @[@(tempCenterX - 10),
+                                 @(tempCenterX + 10),
+                                 @(tempCenterX - 10),
+                                 @(tempCenterX + 10),
+                                 @(tempCenterX + 0)];
+    keyFrameAnimation.duration = 0.4f;
+    keyFrameAnimation.keyPath = @"position.x";
+    [_testBtn.layer addAnimation:keyFrameAnimation forKey:@"shake"];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
