@@ -41,7 +41,7 @@
     rocketView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
     rocketView.backgroundColor = [UIColor greenColor];
     [canvansView addSubview:rocketView];
-    [rocketView setMyCenter:dir_Vertical destinationView:nil parentRelation:YES];
+    [rocketView BearSetCenterToParentViewWithAxis:kAXIS_X];
 }
 
 - (void)startBtnEvent

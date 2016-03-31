@@ -15,12 +15,8 @@
 		1880FE281C33B80B00B203F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1880FE261C33B80B00B203F7 /* LaunchScreen.storyboard */; };
 		1880FE331C33B80B00B203F7 /* AnimationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FE321C33B80B00B203F7 /* AnimationTestTests.m */; };
 		1880FE3E1C33B80B00B203F7 /* AnimationTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FE3D1C33B80B00B203F7 /* AnimationTestUITests.m */; };
-		1880FECA1C33C86F00B203F7 /* BearConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FEC01C33C86F00B203F7 /* BearConstants.m */; };
-		1880FECB1C33C86F00B203F7 /* BearTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FEC21C33C86F00B203F7 /* BearTextField.m */; };
-		1880FECC1C33C86F00B203F7 /* UILabel+BearSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FEC51C33C86F00B203F7 /* UILabel+BearSet.m */; };
-		1880FECD1C33C86F00B203F7 /* UITextField+BearSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FEC71C33C86F00B203F7 /* UITextField+BearSet.m */; };
-		1880FECE1C33C86F00B203F7 /* UIView+BearSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FEC91C33C86F00B203F7 /* UIView+BearSet.m */; };
 		1880FED11C33E05000B203F7 /* CALayer+MyCALayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FED01C33E05000B203F7 /* CALayer+MyCALayer.m */; };
+		607108C77343E777070F60DB /* libPods-AnimationTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE3135646F1A1D712BBC6C5 /* libPods-AnimationTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		093DBCD21CAD7316001CA35F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1880FE151C33B80B00B203F7 /* AnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1880FE191C33B80B00B203F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1880FE1B1C33B80B00B203F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,19 +54,11 @@
 		1880FE391C33B80B00B203F7 /* AnimationTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1880FE3D1C33B80B00B203F7 /* AnimationTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationTestUITests.m; sourceTree = "<group>"; };
 		1880FE3F1C33B80B00B203F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1880FEBF1C33C86F00B203F7 /* BearConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BearConstants.h; sourceTree = "<group>"; };
-		1880FEC01C33C86F00B203F7 /* BearConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BearConstants.m; sourceTree = "<group>"; };
-		1880FEC11C33C86F00B203F7 /* BearTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BearTextField.h; sourceTree = "<group>"; };
-		1880FEC21C33C86F00B203F7 /* BearTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BearTextField.m; sourceTree = "<group>"; };
-		1880FEC31C33C86F00B203F7 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		1880FEC41C33C86F00B203F7 /* UILabel+BearSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+BearSet.h"; sourceTree = "<group>"; };
-		1880FEC51C33C86F00B203F7 /* UILabel+BearSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+BearSet.m"; sourceTree = "<group>"; };
-		1880FEC61C33C86F00B203F7 /* UITextField+BearSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+BearSet.h"; sourceTree = "<group>"; };
-		1880FEC71C33C86F00B203F7 /* UITextField+BearSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+BearSet.m"; sourceTree = "<group>"; };
-		1880FEC81C33C86F00B203F7 /* UIView+BearSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BearSet.h"; sourceTree = "<group>"; };
-		1880FEC91C33C86F00B203F7 /* UIView+BearSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BearSet.m"; sourceTree = "<group>"; };
 		1880FECF1C33E04F00B203F7 /* CALayer+MyCALayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+MyCALayer.h"; sourceTree = "<group>"; };
 		1880FED01C33E05000B203F7 /* CALayer+MyCALayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+MyCALayer.m"; sourceTree = "<group>"; };
+		71549D112CE39AC3D457E7C9 /* Pods-AnimationTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationTest/Pods-AnimationTest.debug.xcconfig"; sourceTree = "<group>"; };
+		BBE3135646F1A1D712BBC6C5 /* libPods-AnimationTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD984DDEC3418E7A7FC8C1B8 /* Pods-AnimationTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationTest/Pods-AnimationTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				607108C77343E777070F60DB /* libPods-AnimationTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +94,8 @@
 				1880FE311C33B80B00B203F7 /* AnimationTestTests */,
 				1880FE3C1C33B80B00B203F7 /* AnimationTestUITests */,
 				1880FE161C33B80B00B203F7 /* Products */,
+				F3A5F55EFF75C06102BC6F38 /* Pods */,
+				EB2ED965E1CECD89AA4E4C44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,8 +118,8 @@
 				1880FE1F1C33B80B00B203F7 /* ViewController.m */,
 				1880FECF1C33E04F00B203F7 /* CALayer+MyCALayer.h */,
 				1880FED01C33E05000B203F7 /* CALayer+MyCALayer.m */,
+				093DBCD21CAD7316001CA35F /* PrefixHeader.pch */,
 				1880FE211C33B80B00B203F7 /* Main.storyboard */,
-				1880FEBE1C33C86F00B203F7 /* BearMethod */,
 				1880FE241C33B80B00B203F7 /* Assets.xcassets */,
 				1880FE261C33B80B00B203F7 /* LaunchScreen.storyboard */,
 				1880FE291C33B80B00B203F7 /* Info.plist */,
@@ -162,22 +154,21 @@
 			path = AnimationTestUITests;
 			sourceTree = "<group>";
 		};
-		1880FEBE1C33C86F00B203F7 /* BearMethod */ = {
+		EB2ED965E1CECD89AA4E4C44 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1880FEC31C33C86F00B203F7 /* PrefixHeader.pch */,
-				1880FEBF1C33C86F00B203F7 /* BearConstants.h */,
-				1880FEC01C33C86F00B203F7 /* BearConstants.m */,
-				1880FEC11C33C86F00B203F7 /* BearTextField.h */,
-				1880FEC21C33C86F00B203F7 /* BearTextField.m */,
-				1880FEC41C33C86F00B203F7 /* UILabel+BearSet.h */,
-				1880FEC51C33C86F00B203F7 /* UILabel+BearSet.m */,
-				1880FEC61C33C86F00B203F7 /* UITextField+BearSet.h */,
-				1880FEC71C33C86F00B203F7 /* UITextField+BearSet.m */,
-				1880FEC81C33C86F00B203F7 /* UIView+BearSet.h */,
-				1880FEC91C33C86F00B203F7 /* UIView+BearSet.m */,
+				BBE3135646F1A1D712BBC6C5 /* libPods-AnimationTest.a */,
 			);
-			path = BearMethod;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3A5F55EFF75C06102BC6F38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71549D112CE39AC3D457E7C9 /* Pods-AnimationTest.debug.xcconfig */,
+				FD984DDEC3418E7A7FC8C1B8 /* Pods-AnimationTest.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1880FE421C33B80B00B203F7 /* Build configuration list for PBXNativeTarget "AnimationTest" */;
 			buildPhases = (
+				77AD96782BC5D7FA82D87756 /* Check Pods Manifest.lock */,
 				1880FE111C33B80B00B203F7 /* Sources */,
 				1880FE121C33B80B00B203F7 /* Frameworks */,
 				1880FE131C33B80B00B203F7 /* Resources */,
+				1A8FC4F1D226CD328050C07E /* Embed Pods Frameworks */,
+				1974A7F6FF350EE01653B74D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,20 +300,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1974A7F6FF350EE01653B74D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimationTest/Pods-AnimationTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A8FC4F1D226CD328050C07E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimationTest/Pods-AnimationTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77AD96782BC5D7FA82D87756 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1880FE111C33B80B00B203F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1880FE201C33B80B00B203F7 /* ViewController.m in Sources */,
-				1880FECA1C33C86F00B203F7 /* BearConstants.m in Sources */,
-				1880FECD1C33C86F00B203F7 /* UITextField+BearSet.m in Sources */,
 				1880FE1D1C33B80B00B203F7 /* AppDelegate.m in Sources */,
 				1880FE1A1C33B80B00B203F7 /* main.m in Sources */,
 				1880FED11C33E05000B203F7 /* CALayer+MyCALayer.m in Sources */,
-				1880FECE1C33C86F00B203F7 /* UIView+BearSet.m in Sources */,
-				1880FECB1C33C86F00B203F7 /* BearTextField.m in Sources */,
-				1880FECC1C33C86F00B203F7 /* UILabel+BearSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,11 +495,12 @@
 		};
 		1880FE431C33B80B00B203F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71549D112CE39AC3D457E7C9 /* Pods-AnimationTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PREFIX_HEADER = "$(SRCROOT)/AnimationTest/BearMethod/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AnimationTest/PrefixHeader.pch";
 				INFOPLIST_FILE = AnimationTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuntu.text.AnimationTest;
@@ -473,11 +511,12 @@
 		};
 		1880FE441C33B80B00B203F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD984DDEC3418E7A7FC8C1B8 /* Pods-AnimationTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PREFIX_HEADER = "$(SRCROOT)/AnimationTest/BearMethod/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AnimationTest/PrefixHeader.pch";
 				INFOPLIST_FILE = AnimationTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuntu.text.AnimationTest;
