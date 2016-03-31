@@ -8,8 +8,10 @@
 
 #import "ViewController.h"
 #import "CABasicAnimationViewController.h"
+#import "CAKeyFrameAnimationDemoVC.h"
 
 static NSString *titleStr_CABasic = @"CABasicAnimationDemo";
+static NSString *titleStr_CAKeyFrame = @"CAKeyFrameAnimationDemo";
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 {
@@ -36,7 +38,7 @@ static NSString *titleStr_CABasic = @"CABasicAnimationDemo";
 
 - (void)createUI
 {
-    _dataArray = @[titleStr_CABasic];
+    _dataArray = @[titleStr_CABasic, titleStr_CAKeyFrame];
     
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
     _tableView.delegate = self;
@@ -74,6 +76,11 @@ static NSString *titleStr_CABasic = @"CABasicAnimationDemo";
     
     if ([selectTitle isEqualToString:titleStr_CABasic]) {
         CABasicAnimationViewController *destinationVC = [[CABasicAnimationViewController alloc] init];
+        [self.navigationController pushViewController:destinationVC animated:YES];
+    }
+    
+    else if ([selectTitle isEqualToString:titleStr_CAKeyFrame]) {
+        CAKeyFrameAnimationDemoVC *destinationVC = [[CAKeyFrameAnimationDemoVC alloc] init];
         [self.navigationController pushViewController:destinationVC animated:YES];
     }
 }
