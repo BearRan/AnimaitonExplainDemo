@@ -9,9 +9,11 @@
 #import "ViewController.h"
 #import "CABasicAnimationViewController.h"
 #import "CAKeyFrameAnimationDemoVC.h"
+#import "RoundCirclePathAnimation.h"
 
 static NSString *titleStr_CABasic = @"CABasicAnimationDemo";
 static NSString *titleStr_CAKeyFrame = @"CAKeyFrameAnimationDemo";
+static NSString *titleStr_CARoundPath = @"RoundCirclePathAnimation";
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 {
@@ -38,7 +40,10 @@ static NSString *titleStr_CAKeyFrame = @"CAKeyFrameAnimationDemo";
 
 - (void)createUI
 {
-    _dataArray = @[titleStr_CABasic, titleStr_CAKeyFrame];
+    _dataArray = @[titleStr_CABasic,
+                   titleStr_CAKeyFrame,
+                   titleStr_CARoundPath,
+                   ];
     
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
     _tableView.delegate = self;
@@ -81,6 +86,11 @@ static NSString *titleStr_CAKeyFrame = @"CAKeyFrameAnimationDemo";
     
     else if ([selectTitle isEqualToString:titleStr_CAKeyFrame]) {
         CAKeyFrameAnimationDemoVC *destinationVC = [[CAKeyFrameAnimationDemoVC alloc] init];
+        [self.navigationController pushViewController:destinationVC animated:YES];
+    }
+    
+    else if ([selectTitle isEqualToString:titleStr_CARoundPath]) {
+        RoundCirclePathAnimation *destinationVC = [[RoundCirclePathAnimation alloc] init];
         [self.navigationController pushViewController:destinationVC animated:YES];
     }
 }

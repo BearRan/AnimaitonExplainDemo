@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		093DBCD51CAD74B2001CA35F /* CABasicAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093DBCD41CAD74B2001CA35F /* CABasicAnimationViewController.m */; };
 		093DBCD81CAD78A5001CA35F /* CAKeyFrameAnimationDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 093DBCD71CAD78A5001CA35F /* CAKeyFrameAnimationDemoVC.m */; };
+		185036F11CB4F8CE00AFBED2 /* RoundCirclePathAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 185036F01CB4F8CE00AFBED2 /* RoundCirclePathAnimation.m */; };
 		1880FE1A1C33B80B00B203F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FE191C33B80B00B203F7 /* main.m */; };
 		1880FE1D1C33B80B00B203F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FE1C1C33B80B00B203F7 /* AppDelegate.m */; };
 		1880FE201C33B80B00B203F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FE1F1C33B80B00B203F7 /* ViewController.m */; };
 		1880FE231C33B80B00B203F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1880FE211C33B80B00B203F7 /* Main.storyboard */; };
 		1880FE251C33B80B00B203F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1880FE241C33B80B00B203F7 /* Assets.xcassets */; };
-		1880FE281C33B80B00B203F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1880FE261C33B80B00B203F7 /* LaunchScreen.storyboard */; };
 		1880FE331C33B80B00B203F7 /* AnimationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FE321C33B80B00B203F7 /* AnimationTestTests.m */; };
 		1880FE3E1C33B80B00B203F7 /* AnimationTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FE3D1C33B80B00B203F7 /* AnimationTestUITests.m */; };
 		1880FED11C33E05000B203F7 /* CALayer+MyCALayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FED01C33E05000B203F7 /* CALayer+MyCALayer.m */; };
@@ -44,6 +44,8 @@
 		093DBCD41CAD74B2001CA35F /* CABasicAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABasicAnimationViewController.m; sourceTree = "<group>"; };
 		093DBCD61CAD78A5001CA35F /* CAKeyFrameAnimationDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAKeyFrameAnimationDemoVC.h; sourceTree = "<group>"; };
 		093DBCD71CAD78A5001CA35F /* CAKeyFrameAnimationDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAKeyFrameAnimationDemoVC.m; sourceTree = "<group>"; };
+		185036EF1CB4F8CE00AFBED2 /* RoundCirclePathAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundCirclePathAnimation.h; sourceTree = "<group>"; };
+		185036F01CB4F8CE00AFBED2 /* RoundCirclePathAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundCirclePathAnimation.m; sourceTree = "<group>"; };
 		1880FE151C33B80B00B203F7 /* AnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1880FE191C33B80B00B203F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1880FE1B1C33B80B00B203F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,7 +54,6 @@
 		1880FE1F1C33B80B00B203F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1880FE221C33B80B00B203F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1880FE241C33B80B00B203F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1880FE271C33B80B00B203F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1880FE291C33B80B00B203F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1880FE2E1C33B80B00B203F7 /* AnimationTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1880FE321C33B80B00B203F7 /* AnimationTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationTestTests.m; sourceTree = "<group>"; };
@@ -126,12 +127,13 @@
 				093DBCD41CAD74B2001CA35F /* CABasicAnimationViewController.m */,
 				093DBCD61CAD78A5001CA35F /* CAKeyFrameAnimationDemoVC.h */,
 				093DBCD71CAD78A5001CA35F /* CAKeyFrameAnimationDemoVC.m */,
+				185036EF1CB4F8CE00AFBED2 /* RoundCirclePathAnimation.h */,
+				185036F01CB4F8CE00AFBED2 /* RoundCirclePathAnimation.m */,
 				1880FECF1C33E04F00B203F7 /* CALayer+MyCALayer.h */,
 				1880FED01C33E05000B203F7 /* CALayer+MyCALayer.m */,
 				093DBCD21CAD7316001CA35F /* PrefixHeader.pch */,
 				1880FE211C33B80B00B203F7 /* Main.storyboard */,
 				1880FE241C33B80B00B203F7 /* Assets.xcassets */,
-				1880FE261C33B80B00B203F7 /* LaunchScreen.storyboard */,
 				1880FE291C33B80B00B203F7 /* Info.plist */,
 				1880FE181C33B80B00B203F7 /* Supporting Files */,
 			);
@@ -288,7 +290,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1880FE281C33B80B00B203F7 /* LaunchScreen.storyboard in Resources */,
 				1880FE251C33B80B00B203F7 /* Assets.xcassets in Resources */,
 				1880FE231C33B80B00B203F7 /* Main.storyboard in Resources */,
 			);
@@ -363,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185036F11CB4F8CE00AFBED2 /* RoundCirclePathAnimation.m in Sources */,
 				093DBCD51CAD74B2001CA35F /* CABasicAnimationViewController.m in Sources */,
 				1880FE201C33B80B00B203F7 /* ViewController.m in Sources */,
 				093DBCD81CAD78A5001CA35F /* CAKeyFrameAnimationDemoVC.m in Sources */,
@@ -410,14 +412,6 @@
 				1880FE221C33B80B00B203F7 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1880FE261C33B80B00B203F7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1880FE271C33B80B00B203F7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -514,6 +508,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AnimationTest/PrefixHeader.pch";
 				INFOPLIST_FILE = AnimationTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuntu.text.AnimationTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -530,6 +525,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AnimationTest/PrefixHeader.pch";
 				INFOPLIST_FILE = AnimationTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuntu.text.AnimationTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
