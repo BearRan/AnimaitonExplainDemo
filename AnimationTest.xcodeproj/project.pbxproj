@@ -18,6 +18,7 @@
 		1880FE331C33B80B00B203F7 /* AnimationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FE321C33B80B00B203F7 /* AnimationTestTests.m */; };
 		1880FE3E1C33B80B00B203F7 /* AnimationTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FE3D1C33B80B00B203F7 /* AnimationTestUITests.m */; };
 		1880FED11C33E05000B203F7 /* CALayer+MyCALayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880FED01C33E05000B203F7 /* CALayer+MyCALayer.m */; };
+		188E17D31CC0D7ED00E8FF87 /* BlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 188E17D21CC0D7ED00E8FF87 /* BlockTest.m */; };
 		607108C77343E777070F60DB /* libPods-AnimationTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE3135646F1A1D712BBC6C5 /* libPods-AnimationTest.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,8 @@
 		1880FE3F1C33B80B00B203F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1880FECF1C33E04F00B203F7 /* CALayer+MyCALayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+MyCALayer.h"; sourceTree = "<group>"; };
 		1880FED01C33E05000B203F7 /* CALayer+MyCALayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+MyCALayer.m"; sourceTree = "<group>"; };
+		188E17D11CC0D7ED00E8FF87 /* BlockTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTest.h; sourceTree = "<group>"; };
+		188E17D21CC0D7ED00E8FF87 /* BlockTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTest.m; sourceTree = "<group>"; };
 		71549D112CE39AC3D457E7C9 /* Pods-AnimationTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationTest/Pods-AnimationTest.debug.xcconfig"; sourceTree = "<group>"; };
 		BBE3135646F1A1D712BBC6C5 /* libPods-AnimationTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD984DDEC3418E7A7FC8C1B8 /* Pods-AnimationTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationTest/Pods-AnimationTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 				093DBCD71CAD78A5001CA35F /* CAKeyFrameAnimationDemoVC.m */,
 				185036EF1CB4F8CE00AFBED2 /* RoundCirclePathAnimation.h */,
 				185036F01CB4F8CE00AFBED2 /* RoundCirclePathAnimation.m */,
+				188E17D11CC0D7ED00E8FF87 /* BlockTest.h */,
+				188E17D21CC0D7ED00E8FF87 /* BlockTest.m */,
 				1880FECF1C33E04F00B203F7 /* CALayer+MyCALayer.h */,
 				1880FED01C33E05000B203F7 /* CALayer+MyCALayer.m */,
 				093DBCD21CAD7316001CA35F /* PrefixHeader.pch */,
@@ -365,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				185036F11CB4F8CE00AFBED2 /* RoundCirclePathAnimation.m in Sources */,
+				188E17D31CC0D7ED00E8FF87 /* BlockTest.m in Sources */,
 				093DBCD51CAD74B2001CA35F /* CABasicAnimationViewController.m in Sources */,
 				1880FE201C33B80B00B203F7 /* ViewController.m in Sources */,
 				093DBCD81CAD78A5001CA35F /* CAKeyFrameAnimationDemoVC.m in Sources */,

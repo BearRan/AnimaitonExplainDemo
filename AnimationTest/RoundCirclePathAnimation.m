@@ -39,6 +39,8 @@
     [_boxView BearSetCenterToParentViewWithAxis:kAXIS_X_Y];
     
     [self roundAnimation];
+    
+
 }
 
 - (void)roundAnimation
@@ -50,9 +52,13 @@
     orbit.path = CGPathCreateWithEllipseInRect(CGRectMake(-radius, -radius, 2 * radius, 2 * radius), nil);
     orbit.duration = 4.0f;
     orbit.additive = YES;
-    orbit.repeatDuration = HUGE_VALF;
+//    orbit.repeatDuration = HUGE_VALF;
     orbit.calculationMode = kCAAnimationPaced;
     orbit.rotationMode = kCAAnimationRotateAuto;
+//    orbit.autoreverses = YES;
+    orbit.speed = 2;
+    orbit.repeatCount = HUGE_VALF;
+    orbit.beginTime = CACurrentMediaTime() + 10;
     
     [_boxView.layer addAnimation:orbit forKey:orbit.keyPath];
 }

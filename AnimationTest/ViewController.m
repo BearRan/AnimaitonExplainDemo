@@ -10,10 +10,12 @@
 #import "CABasicAnimationViewController.h"
 #import "CAKeyFrameAnimationDemoVC.h"
 #import "RoundCirclePathAnimation.h"
+#import "BlockTest.h"
 
 static NSString *titleStr_CABasic = @"CABasicAnimationDemo";
 static NSString *titleStr_CAKeyFrame = @"CAKeyFrameAnimationDemo";
 static NSString *titleStr_CARoundPath = @"RoundCirclePathAnimation";
+static NSString *titleStr_BlockTest = @"BlockTest";
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 {
@@ -43,6 +45,7 @@ static NSString *titleStr_CARoundPath = @"RoundCirclePathAnimation";
     _dataArray = @[titleStr_CABasic,
                    titleStr_CAKeyFrame,
                    titleStr_CARoundPath,
+                   titleStr_BlockTest,
                    ];
     
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
@@ -91,6 +94,11 @@ static NSString *titleStr_CARoundPath = @"RoundCirclePathAnimation";
     
     else if ([selectTitle isEqualToString:titleStr_CARoundPath]) {
         RoundCirclePathAnimation *destinationVC = [[RoundCirclePathAnimation alloc] init];
+        [self.navigationController pushViewController:destinationVC animated:YES];
+    }
+    
+    else if ([selectTitle isEqualToString:titleStr_BlockTest]) {
+        BlockTest *destinationVC = [[BlockTest alloc] init];
         [self.navigationController pushViewController:destinationVC animated:YES];
     }
 }
